@@ -11,7 +11,7 @@ stdin.addListener('data', function(d) {
     var str = d.toString();
     var data = str.split(' ');
     var c = data.length;
-    debugger;
+    
     for(var i=0;i<c; i++) {
         var _d = data[i];              
         if(_d == ')') {
