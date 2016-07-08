@@ -31,14 +31,13 @@ var Stack = function(){
     this.size = function() {
         return N;
     }
-    this.toString = function() {
-        var str = first.item;
-        var n = first.next
-        while(n) {
-            str += n.item;
-            n = n.next;
+    this.peek = function() {
+        if(first) {
+            return first.item;
         }
-        return str;
+        else {
+            return null;
+        }
     }
 };
 
